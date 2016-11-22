@@ -15,6 +15,11 @@
 		168A035A1DA9D04000A0C3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168A03581DA9D04000A0C3D8 /* LaunchScreen.storyboard */; };
 		168A03651DA9D04000A0C3D8 /* ADVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A03641DA9D04000A0C3D8 /* ADVideoPlayerTests.m */; };
 		168A03701DA9D04000A0C3D8 /* ADVideoPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A036F1DA9D04000A0C3D8 /* ADVideoPlayerUITests.m */; };
+		168A03891DA9D09A00A0C3D8 /* ADVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A03881DA9D09A00A0C3D8 /* ADVideoPlayer.m */; };
+		168A038C1DA9D24900A0C3D8 /* ADDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A038B1DA9D24900A0C3D8 /* ADDownloadManager.m */; };
+		168A038F1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A038E1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.m */; };
+		168A03921DAA198D00A0C3D8 /* ADVideoPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 168A03911DAA198D00A0C3D8 /* ADVideoPlayerCell.m */; };
+		168A03941DAA19A800A0C3D8 /* ADVideoPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168A03931DAA19A800A0C3D8 /* ADVideoPlayerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		168A036B1DA9D04000A0C3D8 /* ADVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A036F1DA9D04000A0C3D8 /* ADVideoPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADVideoPlayerUITests.m; sourceTree = "<group>"; };
 		168A03711DA9D04000A0C3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168A03871DA9D09A00A0C3D8 /* ADVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVideoPlayer.h; sourceTree = "<group>"; };
+		168A03881DA9D09A00A0C3D8 /* ADVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVideoPlayer.m; sourceTree = "<group>"; };
+		168A038A1DA9D24900A0C3D8 /* ADDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADDownloadManager.h; sourceTree = "<group>"; };
+		168A038B1DA9D24900A0C3D8 /* ADDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADDownloadManager.m; sourceTree = "<group>"; };
+		168A038D1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVideoURLAssetResourceLoader.h; sourceTree = "<group>"; };
+		168A038E1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVideoURLAssetResourceLoader.m; sourceTree = "<group>"; };
+		168A03901DAA198D00A0C3D8 /* ADVideoPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVideoPlayerCell.h; sourceTree = "<group>"; };
+		168A03911DAA198D00A0C3D8 /* ADVideoPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVideoPlayerCell.m; sourceTree = "<group>"; };
+		168A03931DAA19A800A0C3D8 /* ADVideoPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADVideoPlayerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +115,15 @@
 		168A03491DA9D04000A0C3D8 /* ADVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				168A037D1DA9D08600A0C3D8 /* ADVideoPlayer */,
 				168A034D1DA9D04000A0C3D8 /* AppDelegate.h */,
 				168A034E1DA9D04000A0C3D8 /* AppDelegate.m */,
 				168A03501DA9D04000A0C3D8 /* ViewController.h */,
 				168A03511DA9D04000A0C3D8 /* ViewController.m */,
 				168A03531DA9D04000A0C3D8 /* Main.storyboard */,
+				168A03901DAA198D00A0C3D8 /* ADVideoPlayerCell.h */,
+				168A03911DAA198D00A0C3D8 /* ADVideoPlayerCell.m */,
+				168A03931DAA19A800A0C3D8 /* ADVideoPlayerCell.xib */,
 				168A03561DA9D04000A0C3D8 /* Assets.xcassets */,
 				168A03581DA9D04000A0C3D8 /* LaunchScreen.storyboard */,
 				168A035B1DA9D04000A0C3D8 /* Info.plist */,
@@ -138,6 +156,19 @@
 				168A03711DA9D04000A0C3D8 /* Info.plist */,
 			);
 			path = ADVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		168A037D1DA9D08600A0C3D8 /* ADVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				168A038A1DA9D24900A0C3D8 /* ADDownloadManager.h */,
+				168A038B1DA9D24900A0C3D8 /* ADDownloadManager.m */,
+				168A03871DA9D09A00A0C3D8 /* ADVideoPlayer.h */,
+				168A03881DA9D09A00A0C3D8 /* ADVideoPlayer.m */,
+				168A038D1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.h */,
+				168A038E1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.m */,
+			);
+			path = ADVideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +277,7 @@
 				168A035A1DA9D04000A0C3D8 /* LaunchScreen.storyboard in Resources */,
 				168A03571DA9D04000A0C3D8 /* Assets.xcassets in Resources */,
 				168A03551DA9D04000A0C3D8 /* Main.storyboard in Resources */,
+				168A03941DAA19A800A0C3D8 /* ADVideoPlayerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +303,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				168A03521DA9D04000A0C3D8 /* ViewController.m in Sources */,
+				168A03891DA9D09A00A0C3D8 /* ADVideoPlayer.m in Sources */,
+				168A03921DAA198D00A0C3D8 /* ADVideoPlayerCell.m in Sources */,
 				168A034F1DA9D04000A0C3D8 /* AppDelegate.m in Sources */,
 				168A034C1DA9D04000A0C3D8 /* main.m in Sources */,
+				168A038F1DA9E88000A0C3D8 /* ADVideoURLAssetResourceLoader.m in Sources */,
+				168A038C1DA9D24900A0C3D8 /* ADDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ADVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aodong.ADVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ADVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aodong.ADVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
